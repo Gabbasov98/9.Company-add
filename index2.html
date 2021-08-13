@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление компании</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class='removed-sidebar'>
+            <span>Здесь будет сайдбар</span>
+        </aside>
+        <main>
+            <header class='removed-header'>Здесь будет шапка</header>
+            <div class="company-add">
+                <div class="company-add__top">
+                    <div class="company-add__top-left">
+                        <div class="company-add__tabs">
+                            <div class="company-add__tab">О компании</div>
+                            <div class="company-add__tab">Фото</div>
+                            <div class="company-add__tab">Сертификаты</div>
+                            <div class="company-add__tab">Сотрудники</div>
+                            <div class="company-add__tab">Преимущества</div>
+                            <div class="company-add__tab">Услуги</div>
+                        </div>
+                        <div class="company-add__steps">
+                            <div class="company-add__step company-add__step--active company-add__step--filled"><span>1</span></div>
+                            <div class="company-add__step company-add__step--active"><span>2</span></div>
+                            <div class="company-add__step"><span>3</span></div>
+                            <div class="company-add__step"><span>4</span></div>
+                            <div class="company-add__step"><span>5</span></div>
+                            <div class="company-add__step"><span>6</span></div>
+                        </div>
+                    </div>
+                    <div class="company-add__top-right">
+                        <p>Уровень заполненности</p>
+                        <div class="company-add__progress-bar">
+                            <strong>25%</strong>
+                            <span style="width: 25%;background: #E75E5E;"></span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="company-add__content d-flex justify-content-between">
+                    <div class="company-add__content-left">
+                        <div class="company-add__content-left-inner">
+                            <div class="company-add__title ml-0">Фото</div>
+                            <div class="company-add__photo-items">
+                                <div class="company-add__photo-item company-add__photo-item--file">
+                                    <svg width="49" height="46" viewBox="0 0 49 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.375 6.66663V0.166626H10.625V6.66663H17V11H10.625V17.5H6.375V11H0V6.66663H6.375ZM12.75 19.6666V13.1666H19.125V6.66663H34L37.8887 11H44.625C46.9625 11 48.875 12.95 48.875 15.3333V41.3333C48.875 43.7166 46.9625 45.6666 44.625 45.6666H10.625C8.2875 45.6666 6.375 43.7166 6.375 41.3333V19.6666H12.75ZM27.625 39.1666C33.49 39.1666 38.25 34.3133 38.25 28.3333C38.25 22.3533 33.49 17.5 27.625 17.5C21.76 17.5 17 22.3533 17 28.3333C17 34.3133 21.76 39.1666 27.625 39.1666ZM20.825 28.3333C20.825 32.1683 23.8637 35.2666 27.625 35.2666C31.3862 35.2666 34.425 32.1683 34.425 28.3333C34.425 24.4983 31.3862 21.4 27.625 21.4C23.8637 21.4 20.825 24.4983 20.825 28.3333Z" fill="#B4B4B4"/>
+                                </svg>
+                                    <span>Добавить фото</span>
+                                    <input type="file" accept=".png, .jpg, .jpeg">
+                                </div>
+                                <div class="company-add__photo-item company-add__photo-item--active">
+                                    <img src="img/company1.png" alt="">
+                                </div>
+                                <div class="company-add__photo-item">
+                                    <img src="img/company2.png" alt="">
+                                </div>
+                                <div class="company-add__photo-item">
+                                    <img src="img/company3.png" alt="">
+                                </div>
+                                <div class="company-add__photo-item">
+                                    <img src="img/company4.png" alt="">
+                                </div>
+                                <div class="company-add__photo-item">
+                                    <img src="img/company5.png" alt="">
+                                </div>
+                                <div class="company-add__photo-item">
+                                    <img src="img/company7.png" alt="">
+                                </div>
+                                <div class="company-add__photo-item">
+                                    <img src="img/company7.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="mt-0 company-add__buttons">
+                            <button class=" save-btn save-btn--disabled custom-btn">
+                                <i>
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.7751 6H14.4522C14.1645 6 13.8909 6.13869 13.7217 6.37644L9.28767 12.5467L7.2794 9.75024C7.11017 9.51532 6.83939 9.37381 6.54887 9.37381H5.22601C5.04267 9.37381 4.93548 9.58325 5.04267 9.73326L8.55714 14.6241C8.64016 14.7404 8.74961 14.8352 8.87641 14.9005C9.00321 14.9659 9.14371 15 9.28626 15C9.42882 15 9.56932 14.9659 9.69612 14.9005C9.82292 14.8352 9.93237 14.7404 10.0154 14.6241L15.9556 6.35946C16.0656 6.20945 15.9584 6 15.7751 6Z" fill="white"></path>
+                                        <path d="M10.5 0C4.70156 0 0 4.70156 0 10.5C0 16.2984 4.70156 21 10.5 21C16.2984 21 21 16.2984 21 10.5C21 4.70156 16.2984 0 10.5 0ZM10.5 19.2188C5.68594 19.2188 1.78125 15.3141 1.78125 10.5C1.78125 5.68594 5.68594 1.78125 10.5 1.78125C15.3141 1.78125 19.2188 5.68594 19.2188 10.5C19.2188 15.3141 15.3141 19.2188 10.5 19.2188Z" fill="white"></path>
+                                    </svg>
+                                </i>
+                                <span>Сохранить</span>
+                            </button>
+                            <button class="save-btn custom-btn">
+                                <i>
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.7751 6H14.4522C14.1645 6 13.8909 6.13869 13.7217 6.37644L9.28767 12.5467L7.2794 9.75024C7.11017 9.51532 6.83939 9.37381 6.54887 9.37381H5.22601C5.04267 9.37381 4.93548 9.58325 5.04267 9.73326L8.55714 14.6241C8.64016 14.7404 8.74961 14.8352 8.87641 14.9005C9.00321 14.9659 9.14371 15 9.28626 15C9.42882 15 9.56932 14.9659 9.69612 14.9005C9.82292 14.8352 9.93237 14.7404 10.0154 14.6241L15.9556 6.35946C16.0656 6.20945 15.9584 6 15.7751 6Z" fill="white"></path>
+                                        <path d="M10.5 0C4.70156 0 0 4.70156 0 10.5C0 16.2984 4.70156 21 10.5 21C16.2984 21 21 16.2984 21 10.5C21 4.70156 16.2984 0 10.5 0ZM10.5 19.2188C5.68594 19.2188 1.78125 15.3141 1.78125 10.5C1.78125 5.68594 5.68594 1.78125 10.5 1.78125C15.3141 1.78125 19.2188 5.68594 19.2188 10.5C19.2188 15.3141 15.3141 19.2188 10.5 19.2188Z" fill="white"></path>
+                                    </svg>
+                                </i>
+                                <span>Далее</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="company-add__content-right">
+                        <div class="company-add__content-right-inner">
+                            <div class="company-add__edit">
+                                <div class="company-add__title ml-0">Редактирование фото</div>
+                                <div class="company-add__edit-item">
+                                    <span>Файл</span>
+                                    <div>
+                                        <img src="img/company1.png" alt="">
+                                        <strong>Foto1.jpg</strong>
+                                        <small>450x460</small>
+                                    </div>
+                                </div>
+                                <div class="company-add__edit-item align-items-center">
+                                    <span>Заголовок </span>
+                                    <div>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="company-add__edit-item align-items-center">
+                                    <span>Подпись</span>
+                                    <div>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="company-add__edit-item">
+                                    <span>Атрибут Alt</span>
+                                    <div>
+                                        <textarea class=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="company-add__edit-item">
+                                    <span>Описание</span>
+                                    <div>
+                                        <textarea class="company-add__edit-item-textarea143"></textarea>
+                                    </div>
+                                </div>
+                                <div class="company-add__edit-item">
+                                    <span>Использовать
+                                        как фото обложки</span>
+                                    <div class="company-add__edit-item-check">
+                                        <input type='checkbox' class="checkbox" id='c' />
+                                        <label for='c'></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content__right-nav">
+                            <button class="save-btn custom-btn">
+                                <i>
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.7751 6H14.4522C14.1645 6 13.8909 6.13869 13.7217 6.37644L9.28767 12.5467L7.2794 9.75024C7.11017 9.51532 6.83939 9.37381 6.54887 9.37381H5.22601C5.04267 9.37381 4.93548 9.58325 5.04267 9.73326L8.55714 14.6241C8.64016 14.7404 8.74961 14.8352 8.87641 14.9005C9.00321 14.9659 9.14371 15 9.28626 15C9.42882 15 9.56932 14.9659 9.69612 14.9005C9.82292 14.8352 9.93237 14.7404 10.0154 14.6241L15.9556 6.35946C16.0656 6.20945 15.9584 6 15.7751 6Z" fill="white"></path>
+                                        <path d="M10.5 0C4.70156 0 0 4.70156 0 10.5C0 16.2984 4.70156 21 10.5 21C16.2984 21 21 16.2984 21 10.5C21 4.70156 16.2984 0 10.5 0ZM10.5 19.2188C5.68594 19.2188 1.78125 15.3141 1.78125 10.5C1.78125 5.68594 5.68594 1.78125 10.5 1.78125C15.3141 1.78125 19.2188 5.68594 19.2188 10.5C19.2188 15.3141 15.3141 19.2188 10.5 19.2188Z" fill="white"></path>
+                                    </svg>
+                                </i>
+                                <span>Сохранить</span>
+                            </button>
+                            <button class="delete-btn custom-btn">
+                                <i>
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 0C8.08262 0 5.28473 1.15893 3.22183 3.22183C1.15893 5.28473 0 8.08262 0 11C0 13.9174 1.15893 16.7153 3.22183 18.7782C5.28473 20.8411 8.08262 22 11 22C13.9174 22 16.7153 20.8411 18.7782 18.7782C20.8411 16.7153 22 13.9174 22 11C22 8.08262 20.8411 5.28473 18.7782 3.22183C16.7153 1.15893 13.9174 0 11 0V0ZM11 19.9375C8.62963 19.9375 6.35634 18.9959 4.68023 17.3198C3.00413 15.6437 2.0625 13.3704 2.0625 11C2.0625 8.62963 3.00413 6.35634 4.68023 4.68023C6.35634 3.00413 8.62963 2.0625 11 2.0625C13.3704 2.0625 15.6437 3.00413 17.3198 4.68023C18.9959 6.35634 19.9375 8.62963 19.9375 11C19.9375 13.3704 18.9959 15.6437 17.3198 17.3198C15.6437 18.9959 13.3704 19.9375 11 19.9375Z" fill="#FFFFFF"></path>
+                                        <path d="M14.4375 5.5L11 8.9375L7.5625 5.5L5.5 7.5625L8.9375 11L5.5 14.4375L7.5625 16.5L11 13.0625L14.4375 16.5L16.5 14.4375L13.0625 11L16.5 7.5625L14.4375 5.5Z" fill="#FFFFFF"></path>
+                                    </svg>
+                                </i>
+                                <span>Удалить</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/datapicker.js"></script>
+    <script src="js/chart.min.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
